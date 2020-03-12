@@ -1,0 +1,8 @@
+C:\Users\Ведьмак\Desktop\KadetAssistance\Kadet_Assistance\DataTier\obj\Debug\netcoreapp2.2\DataTier.csprojAssemblyReference.cache
+C:\Users\Ведьмак\Desktop\KadetAssistance\Kadet_Assistance\DataTier\obj\Debug\netcoreapp2.2\DataTier.AssemblyInfoInputs.cache
+C:\Users\Ведьмак\Desktop\KadetAssistance\Kadet_Assistance\DataTier\obj\Debug\netcoreapp2.2\DataTier.AssemblyInfo.cs
+C:\Users\Ведьмак\Desktop\KadetAssistance\Kadet_Assistance\DataTier\bin\Debug\netcoreapp2.2\DataTier.deps.json
+C:\Users\Ведьмак\Desktop\KadetAssistance\Kadet_Assistance\DataTier\bin\Debug\netcoreapp2.2\DataTier.dll
+C:\Users\Ведьмак\Desktop\KadetAssistance\Kadet_Assistance\DataTier\bin\Debug\netcoreapp2.2\DataTier.pdb
+C:\Users\Ведьмак\Desktop\KadetAssistance\Kadet_Assistance\DataTier\obj\Debug\netcoreapp2.2\DataTier.dll
+C:\Users\Ведьмак\Desktop\KadetAssistance\Kadet_Assistance\DataTier\obj\Debug\netcoreapp2.2\DataTier.pdb
