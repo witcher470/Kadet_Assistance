@@ -15,6 +15,7 @@ namespace DataTier.Entities.Concrete
         public int CardNumber { get; set; }
         [Required(ErrorMessage = "Введите стоимость карты")]
         public int CardCost { get; set; }
+        public int ClientId { get; set; }
         public ClientInfo ClientInfo { get; set; }
         [Required(ErrorMessage = "Укажите срок действия карты ")]
         public DateTime Duration { get; set; }
@@ -55,10 +56,8 @@ namespace DataTier.Entities.Concrete
         public string EmployerSecondName { get; set; }
         [Required(ErrorMessage = "Введите отчество сотрудника ")]
         public string EmployerThirdName { get; set; }
-        public ICollection<ClientInfo> ClientInfos { get; set; }
         public Card()
         {
-            ClientInfos = new List<ClientInfo>();
         }
       
     }

@@ -9,5 +9,10 @@ namespace DataTier.Entities.Concrete.Enums
         public int Id { get; set; }
         public string Name { get; set; }
         public ServiceStatus ServiceStatus { get; set; }
+        public ICollection<Order> Orders { get; set; }
+        public Service()
+        {
+            Orders = new List<Order>();
+        }
     }
 }

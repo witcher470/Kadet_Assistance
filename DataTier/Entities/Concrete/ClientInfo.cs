@@ -27,9 +27,12 @@ namespace DataTier.Entities.Concrete
         public string StateNumber { get; set; }
         [Required(ErrorMessage = "Введите регион обслуживания клиента ")]
         public string Region { get; set; }
+        public ICollection<Order> Orders { get; set; }
+        public ICollection<Card> Cards { get; set; }
         public ClientInfo()
         {
-
+            Orders = new List<Order>();
+            Cards = new List<Card>();
         }
 
 

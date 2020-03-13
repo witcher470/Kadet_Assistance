@@ -10,5 +10,10 @@ namespace DataTier.Entities.Concrete
         public string Name { get; set; }
         public string BillingInformation { get; set; }
         public string DirectorOrSignatory { get; set; }
+        public ICollection<DealerCenter> DealerCenters { get; set; }
+        public LegalPerson()
+        {
+            DealerCenters = new List<DealerCenter>();
+        }
     }
 }

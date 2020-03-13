@@ -8,5 +8,10 @@ namespace DataTier.Entities.Concrete
     {
         public int Id { get; set; }
         public string  Name { get; set; }
+        public ICollection<DealerCenter> DealerCenters { get; set; }
+        public HasFillial()
+        {
+            DealerCenters = new List<DealerCenter>();
+        }
     }
 }

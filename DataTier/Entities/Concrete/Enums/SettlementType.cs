@@ -8,5 +8,10 @@ namespace DataTier.Entities.Concrete.Enums
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public ICollection<DealerCenter> DealerCenters { get; set; }
+        public SettlementType()
+        {
+            DealerCenters = new List<DealerCenter>();
+        }
     }
 }

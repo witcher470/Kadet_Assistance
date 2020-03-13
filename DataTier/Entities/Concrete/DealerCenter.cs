@@ -12,6 +12,9 @@ namespace DataTier.Entities.Concrete
         [Required(ErrorMessage = "Введите название дилерского центра ")]
         public string Name { get; set; }
         public HasFillial HasFillial { get; set; }
+        public int FillialId { get; set; }
+        public Fillial Fillial { get; set; }
+        public int CountryId { get; set; }
         [Required(ErrorMessage = "Укажите страну, в которой расположен дилерский центр")]
         public Country Country { get; set; }
         [Required(ErrorMessage = "Укажите город, в котором расположен дилерский центр")]
@@ -21,6 +24,7 @@ namespace DataTier.Entities.Concrete
         [Required(ErrorMessage = "Укажите номер дома, в котором расположен дилерский центр")]
         public string HomeNumber { get; set; }
         [Required(ErrorMessage = "Укажите марки машин, которые продаёт дилерский центр")]
+        public int CarBrandId { get; set; }
         public CarBrand CarBrand { get; set; }
         public DealerCenterStatus DealerCenterStatus { get; set; }
         public string Website { get; set; }
@@ -45,31 +49,14 @@ namespace DataTier.Entities.Concrete
         public string Password { get; set; }
         public string CooperatorName { get; set; }
         public string CooperatorPhoneNumber { get; set; }
-        public ICollection<ServiceStation> ServiceStations { get; set; }
         public ICollection<Fillial> Fillials { get; set; }
-        public ICollection<HasFillial> HasFillials { get; set; }
-        public ICollection<SettlementPeriod> SettlementPeriods { get; set; }
-        public ICollection<SettlementType> SettlementTypes { get; set; }
-        public ICollection<Country> Countries { get; set; }
-        public ICollection<CarBrand> CarBrands { get; set; }
-        public ICollection<CommercialResponsiblePerson> CommercialResponsiblePersons { get; set; }
-        public ICollection<AccountingResponsiblePerson> AccountingResponsiblePersons { get; set;}
-        public ICollection<LegalPerson> LegalPersons { get; set; }
+
 
 
 
         public DealerCenter()
         {
             Fillials = new List<Fillial>();
-            ServiceStations = new List<ServiceStation>();
-            HasFillials = new List<HasFillial>();
-            SettlementPeriods = new List<SettlementPeriod>();
-            SettlementTypes = new List<SettlementType>();
-            Countries = new List<Country>();
-            CarBrands = new List<CarBrand>();
-            CommercialResponsiblePersons = new List<CommercialResponsiblePerson>();
-            AccountingResponsiblePersons = new List<AccountingResponsiblePerson>();
-            LegalPersons = new List<LegalPerson>();
         }
 
 
