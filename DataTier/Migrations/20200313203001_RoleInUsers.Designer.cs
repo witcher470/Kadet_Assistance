@@ -3,15 +3,17 @@ using System;
 using DataTier.Entities.Abstract;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace DataTier.Migrations
 {
     [DbContext(typeof(EFDbContext))]
-    partial class EFDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200313203001_RoleInUsers")]
+    partial class RoleInUsers
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -223,9 +225,7 @@ namespace DataTier.Migrations
 
                     b.Property<int?>("OrderId");
 
-                    b.Property<int?>("PaymentMethodId");
-
-                    b.Property<int>("PaymnetMethodId");
+                    b.Property<int>("PaymentMethodId");
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired();
@@ -496,7 +496,7 @@ namespace DataTier.Migrations
 
                     b.Property<int>("OrderStatus");
 
-                    b.Property<int>("PaymentMethodId");
+                    b.Property<int?>("PaymentMethodId");
 
                     b.Property<string>("PointOfDeparture");
 
@@ -532,9 +532,17 @@ namespace DataTier.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<int?>("ContractorId");
+
                     b.Property<string>("Name");
 
+                    b.Property<int?>("OrderId");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("ContractorId");
+
+                    b.HasIndex("OrderId");
 
                     b.ToTable("PaymentMethods");
                 });
@@ -699,8 +707,9 @@ namespace DataTier.Migrations
                         .HasForeignKey("OrderId");
 
                     b.HasOne("DataTier.Entities.Concrete.PaymentMethod", "PaymentMethod")
-                        .WithMany("Contractors")
-                        .HasForeignKey("PaymentMethodId");
+                        .WithMany()
+                        .HasForeignKey("PaymentMethodId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("DataTier.Entities.Concrete.Enums.Service", "Services")
                         .WithMany()
@@ -810,14 +819,24 @@ namespace DataTier.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("DataTier.Entities.Concrete.PaymentMethod", "PaymentMethod")
-                        .WithMany("Orders")
-                        .HasForeignKey("PaymentMethodId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .WithMany()
+                        .HasForeignKey("PaymentMethodId");
 
                     b.HasOne("DataTier.Entities.Concrete.Enums.Service", "Services")
                         .WithMany()
                         .HasForeignKey("ServicesId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("DataTier.Entities.Concrete.PaymentMethod", b =>
+                {
+                    b.HasOne("DataTier.Entities.Concrete.Contractor")
+                        .WithMany("PaymentMethods")
+                        .HasForeignKey("ContractorId");
+
+                    b.HasOne("DataTier.Entities.Concrete.Order")
+                        .WithMany("PaymentMethods")
+                        .HasForeignKey("OrderId");
                 });
 
             modelBuilder.Entity("DataTier.Entities.Concrete.ServiceStation", b =>

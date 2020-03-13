@@ -25,6 +25,7 @@ namespace DataTier.Entities.Concrete
         [Required(ErrorMessage = "Введите ссылку на прайс лист подрядчика ")]
         public string PriceList { get; set; }
         [Required(ErrorMessage = "Выберите метод оплаты")]
+        public int PaymnetMethodId { get; set; }
         public PaymentMethod PaymentMethod { get; set; }
         public string AnotherPhoneNumber { get; set; }
         public string WorkTime { get; set; }
@@ -40,11 +41,9 @@ namespace DataTier.Entities.Concrete
         [Required(ErrorMessage = "Укажите, есть ли в наличии эвакуаторы с краном-манипулятором")]
         public CraneManipulatorStatus CraneManipulatorStatus { get; set; }
         public Service AnotherServices {get;set;}
-        public ICollection<PaymentMethod> PaymentMethods { get; set; }
 
         public Contractor()
         {
-            PaymentMethods = new List<PaymentMethod>();
         }
     }
 }

@@ -20,16 +20,16 @@ namespace DataTier.Entities.Concrete
         public string Email { get; set; }
         [Required(ErrorMessage = "Введите номер телефона клиента клиента ")]
         public string PhoneNumber { get; set; }
+        public int CarBrandId { get; set; }
         [Required(ErrorMessage = "Введите модель машины клиента ")]
         public CarBrand CarBrand { get; set; }
         [Required(ErrorMessage = "Введите государственный номер автомобиля клиента ")]
         public string StateNumber { get; set; }
         [Required(ErrorMessage = "Введите регион обслуживания клиента ")]
         public string Region { get; set; }
-        public ICollection<CarBrand> CarBrands { get; set; }
         public ClientInfo()
         {
-            CarBrands = new List<CarBrand>();
+
         }
 
 

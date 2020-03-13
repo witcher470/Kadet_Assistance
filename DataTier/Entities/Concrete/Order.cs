@@ -28,16 +28,15 @@ namespace DataTier.Entities.Concrete
         public Contractor Contractor { get; set; }
         public DateTime ServiceTime { get; set; }
         public OrderStatus OrderStatus { get; set; }
+        public int PaymentMethodId { get; set; }
         public PaymentMethod PaymentMethod { get; set; }
         public int ServiceRating { get; set; }
         public string OperatorComment { get; set; }
         public string ClientReview { get; set; }
-        public ICollection<PaymentMethod> PaymentMethods { get; set; }
         public ICollection<Contractor> Contractors { get; set; }
         public ICollection<ClientInfo> ClientInfos { get; set; }
         public Order()
         {
-            PaymentMethods = new List<PaymentMethod>();
             Contractors = new List<Contractor>();
             ClientInfos = new List<ClientInfo>();
         }
