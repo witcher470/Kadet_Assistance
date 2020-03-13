@@ -16,6 +16,7 @@ namespace DataTier.Entities.Concrete
         public string SecondName { get; set; }
         [Required(ErrorMessage = "Введите отчество")]
         public string ThirdName { get; set; }
+        public int RoleId { get; set; }
         [Required(ErrorMessage = "Выберите роль")]
         public Role Role { get; set; }
         public DateTime StartWorkDate { get; set; }
@@ -36,14 +37,5 @@ namespace DataTier.Entities.Concrete
         public string Timezone { get; set; }
         [Required(ErrorMessage = "Введите SIP номер")]
         public string PhoneSIPNumber { get; set; }
-        public ICollection<Role> Roles { get; set; }
-
-        public User()
-        {
-            Roles = new List<Role>();
-
-        }
-
-
     }
 }
