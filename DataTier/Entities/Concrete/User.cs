@@ -19,6 +19,7 @@ namespace DataTier.Entities.Concrete
         [Required(ErrorMessage = "Выберите роль")]
         public Role Role { get; set; }
         public DateTime StartWorkDate { get; set; }
+        public int CountryId { get; set; }
         [Required(ErrorMessage = "Укажите страну")]
         public Country Country { get; set; }
         [Required(ErrorMessage = "Укажите основной язык")]
@@ -36,12 +37,11 @@ namespace DataTier.Entities.Concrete
         [Required(ErrorMessage = "Введите SIP номер")]
         public string PhoneSIPNumber { get; set; }
         public ICollection<Role> Roles { get; set; }
-        public ICollection<Country> Countries { get; set; }
 
         public User()
         {
             Roles = new List<Role>();
-            Countries = new List<Country>();
+
         }
 
 
