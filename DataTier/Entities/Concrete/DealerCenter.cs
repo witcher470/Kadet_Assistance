@@ -49,6 +49,8 @@ namespace DataTier.Entities.Concrete
         public string Password { get; set; }
         public string CooperatorName { get; set; }
         public string CooperatorPhoneNumber { get; set; }
+        public int ServiceStationId { get; set; }
+        public ServiceStation ServiceStation { get; set; }
         public ICollection<Fillial> Fillials { get; set; }
 
 

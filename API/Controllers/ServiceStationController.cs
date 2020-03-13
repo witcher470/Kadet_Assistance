@@ -28,10 +28,7 @@ namespace API.Controllers
                   {
                       serviceStationId = st.Id,
                       serviceStationName=st.Name,
-                      serviceStationCountry = st.Countries.Select(c =>new
-                      {
-                          contryName=c.Name
-                      }),
+                      serviceStationCountry=st.Country,
                       serviceStationCity = st.City,
                       serviceStationStreet=st.Street,
                       serviceStationHomeNumber=st.HomeNumber,

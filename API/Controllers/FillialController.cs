@@ -30,7 +30,7 @@ namespace API.Controllers
                     fillialName = fl.Name,
                     location  =fl.Location,
                     dealerCenter = fl.DealerCenter,
-                    carBrands = fl.CarBrands,
+                    carBrands = fl.CarBrand,
                     fillialStatus = fl.FillialStatus
                   });
             return Ok(fillials);

@@ -31,37 +31,19 @@ namespace API.Controllers
                       name=dc.Name,
                       hasFillial = dc.HasFillial,
                       fillials = dc.Fillials,
-                      country = dc.Countries.Select(c=> new
-                      {
-                          countryName = c.Name
-                      }),
-                      carBrands = dc.CarBrands,
+                      country = dc.Country,
+                      carBrands = dc.CarBrand,
                       dealerCenterStatus = dc.DealerCenterStatus,
                       website = dc.Website,
                       receptionPhoneNumber = dc.ReceptionPhoneNumber,
                       workingHours = dc.WorkingHours,
                       billingInformation = dc.BillingInformation,
-                      legalPersonInfo = dc.LegalPersons.Select(lp=> new
-                      {
-                          legalPersonName = lp.Name,
-                          legalPersonBillingInformation = lp.BillingInformation,
-                          legalPersonDirectorOrSignatory = lp.DirectorOrSignatory
-                      }),
+                      legalPersonInfo = dc.LegalPerson,
                       dateTimeOfContract = dc.DateTimeOfContract,
                       settlementPeriod = dc.SettlementPeriod,
                       settlementType = dc.SettlementType,
-                      commercialResponsiblePersonInfo = dc.CommercialResponsiblePersons.Select(crp => new 
-                      { 
-                        commercialResponsiblePersonName = crp.Name,
-                        commercialResponsiblePersonPhoneNumber = crp.PhoneNumber,
-                        commercialResponsiblePersonEmail=crp.Email
-                      }),
-                      accountingResponsiblePersonInfo = dc.AccountingResponsiblePersons.Select(arp => new
-                      {
-                          accountingResponsiblePersonName=arp.Name,
-                          accountingResponsiblePersonPhoneNumber = arp.PhoneNumber,
-                          accountingResponsiblePersonEmail=arp.Email
-                      }),
+                      commercialResponsiblePersonInfo = dc.CommercialResponsiblePerson,
+                      accountingResponsiblePersonInfo = dc.AccountingResponsiblePerson,
                       technicalAssistanceCardSeries = dc.TechnicalAssistanceCardSeries,
                       typesAndFillingOfServicePackages = dc.TypesAndFillingOfServicePackages,
                       materialsLink = dc.MaterialsLink,
@@ -70,7 +52,7 @@ namespace API.Controllers
                       password = dc.Password,
                       cooperatorName = dc.CooperatorName,
                       cooperatorPhoneNumber = dc.CooperatorPhoneNumber,
-                      serviceStations = dc.ServiceStations
+                      serviceStations = dc.ServiceStation
                   });
             return Ok(dealerCenters);
 

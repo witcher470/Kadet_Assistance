@@ -28,12 +28,7 @@ namespace API.Controllers
                   {
                      orderId = or.Id,
                      dateTimeOrdered = or.DateTimeOrdered,
-                     clientInfo = or.ClientInfos.Select(cl => new
-                     {
-                         clientFirstName = cl.ClientFristName,
-                         clientSecondName=cl.ClientSecondName,
-                         clientThirdName=cl.ClientThirdName
-                     }),
+                     clientFirstName = or.ClientInfo,
                      technicalAssistanceCardNumber = or.TechnicalAssistanceCardNumber,
                      location = or.Location,
                      pointOfDeparture = or.PointOfDeparture,

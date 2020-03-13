@@ -30,16 +30,7 @@ namespace API.Controllers
                       cardId = cd.Id,
                       cardNumber = cd.CardNumber,
                       cardCost = cd.CardCost,
-                      clientInfo = cd.ClientInfos.Select(cl => new
-                      {
-                          clientFirstName = cl.ClientFristName,
-                          clientSecondName = cl.ClientSecondName,
-                          clientThirdName = cl.ClientThirdName,
-                          clientEmail=cl.Email,
-                          clientCarModel=cl.CarBrand,
-                          clientStateNumber=cl.StateNumber,
-                          clientRegion=cl.Region
-                      }),                    
+                      clientInfo = cd.ClientInfo,
                       duration = cd.Duration,
                       vin = cd.VIN,
                       services = cd.Services,
