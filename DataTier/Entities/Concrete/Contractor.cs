@@ -41,11 +41,9 @@ namespace DataTier.Entities.Concrete
         [Required(ErrorMessage = "Укажите, есть ли в наличии эвакуаторы с краном-манипулятором")]
         public CraneManipulatorStatus CraneManipulatorStatus { get; set; }
         public Service AnotherServices {get;set;}
-        public ICollection<Order> Orders { get; set; }
 
         public Contractor()
         {
-            Orders = new List<Order>();
         }
     }
 }

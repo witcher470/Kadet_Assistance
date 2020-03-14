@@ -12,8 +12,6 @@ namespace DataTier.Entities.Concrete
         public string Name { get; set; }
         [Required(ErrorMessage = "Укажите расположение филлиала")]
         public string Location { get; set; }
-        public int DealerCenterId { get; set; }
-        public DealerCenter DealerCenter { get; set; }
         public int CarBrandId { get; set; }
         public CarBrand CarBrand { get; set; }
         public FillialStatus FillialStatus { get; set; }

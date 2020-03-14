@@ -26,9 +26,6 @@ namespace DataTier.Entities.Concrete
         public int ServicesCostForContractor { get; set; }
         [Required(ErrorMessage = "Укажите комиссию компании")]
         public int CompanyComission { get; set; }
-        public int ContractorId { get; set; }
-        [Required(ErrorMessage = "Укажите  подрядчика")]
-        public Contractor Contractor { get; set; }
         public DateTime ServiceTime { get; set; }
         public OrderStatus OrderStatus { get; set; }
         public int PaymentMethodId { get; set; }

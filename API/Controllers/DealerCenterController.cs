@@ -30,7 +30,7 @@ namespace API.Controllers
                       dealerCenterId = dc.Id,
                       name=dc.Name,
                       hasFillial = dc.HasFillial,
-                      fillials = dc.Fillials,
+                      fillials = dc.Fillial,
                       country = dc.Country,
                       carBrands = dc.CarBrand,
                       dealerCenterStatus = dc.DealerCenterStatus,

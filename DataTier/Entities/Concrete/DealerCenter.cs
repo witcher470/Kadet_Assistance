@@ -51,14 +51,9 @@ namespace DataTier.Entities.Concrete
         public string CooperatorPhoneNumber { get; set; }
         public int ServiceStationId { get; set; }
         public ServiceStation ServiceStation { get; set; }
-        public ICollection<Fillial> Fillials { get; set; }
-
-
-
-
         public DealerCenter()
         {
-            Fillials = new List<Fillial>();
+
         }
 
 

@@ -29,7 +29,7 @@ namespace API.Controllers
                     fillialId = fl.Id,
                     fillialName = fl.Name,
                     location  =fl.Location,
-                    dealerCenter = fl.DealerCenter,
+                    dealerCenter = fl.DealerCenters,
                     carBrands = fl.CarBrand,
                     fillialStatus = fl.FillialStatus
                   });
