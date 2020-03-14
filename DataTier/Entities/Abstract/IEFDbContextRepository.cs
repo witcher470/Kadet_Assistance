@@ -15,7 +15,6 @@ namespace DataTier.Entities.Abstract
         IEnumerable<Order> Orders { get; }
         IEnumerable<ServiceStation> ServiceStations { get; }
         IEnumerable<User> Users { get; }
-        IEnumerable<HasFillial> HasFillials { get; }
         IEnumerable<PaymentMethod> PaymentMethods { get; }
         IEnumerable<Role> Roles { get; }
         IEnumerable<Service> Services { get; }

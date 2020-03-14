@@ -1,4 +1,5 @@
 ﻿using DataTier.Entities.Concrete.Statuses;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -14,6 +15,7 @@ namespace DataTier.Entities.Concrete
         public string Street { get; set; }
         public string HomeNumber { get; set; }
         public ServiceStationStatus ServiceStationStatus { get; set; }
+        [JsonIgnore]
         public ICollection<DealerCenter> DealerCenters { get; set; }
         public ServiceStation()
         {

@@ -11,7 +11,6 @@ namespace DataTier.Entities.Concrete
         public int Id { get; set; }
         [Required(ErrorMessage = "Введите название дилерского центра ")]
         public string Name { get; set; }
-        public HasFillial HasFillial { get; set; }
         public int FillialId { get; set; }
         public Fillial Fillial { get; set; }
         public int CountryId { get; set; }

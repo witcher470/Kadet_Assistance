@@ -1,4 +1,5 @@
 ﻿using DataTier.Entities.Concrete.Enums;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -33,6 +34,7 @@ namespace DataTier.Entities.Concrete
         public int ServiceRating { get; set; }
         public string OperatorComment { get; set; }
         public string ClientReview { get; set; }
+        [JsonIgnore]
         public ICollection<Contractor> Contractors { get; set; }
         public Order()
         {

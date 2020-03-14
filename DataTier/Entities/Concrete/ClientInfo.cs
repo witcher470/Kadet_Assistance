@@ -1,4 +1,5 @@
 ﻿using DataTier.Entities.Concrete.Enums;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -27,7 +28,9 @@ namespace DataTier.Entities.Concrete
         public string StateNumber { get; set; }
         [Required(ErrorMessage = "Введите регион обслуживания клиента ")]
         public string Region { get; set; }
+        [JsonIgnore]
         public ICollection<Order> Orders { get; set; }
+        [JsonIgnore]
         public ICollection<Card> Cards { get; set; }
         public ClientInfo()
         {

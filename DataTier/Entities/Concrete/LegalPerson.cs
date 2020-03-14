@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,6 +11,7 @@ namespace DataTier.Entities.Concrete
         public string Name { get; set; }
         public string BillingInformation { get; set; }
         public string DirectorOrSignatory { get; set; }
+        [JsonIgnore]
         public ICollection<DealerCenter> DealerCenters { get; set; }
         public LegalPerson()
         {

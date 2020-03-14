@@ -17,7 +17,6 @@ namespace DataTier.Entities.Abstract
         public DbSet<Order> Orders { get; set; }
         public DbSet<ServiceStation> ServiceStations { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<HasFillial> HasFillials { get; set; }
         public DbSet<PaymentMethod> PaymentMethods { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<Service> Services { get; set; }

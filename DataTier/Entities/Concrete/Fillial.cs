@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
@@ -15,6 +16,7 @@ namespace DataTier.Entities.Concrete
         public int CarBrandId { get; set; }
         public CarBrand CarBrand { get; set; }
         public FillialStatus FillialStatus { get; set; }
+        [JsonIgnore]
         public ICollection<DealerCenter> DealerCenters { get; set; }
         public Fillial()
         {

@@ -23,7 +23,6 @@ namespace DataTier.Entities.Abstract
 
         public IEnumerable<ServiceStation> ServiceStations { get { return _context.ServiceStations; } }
 
-        public IEnumerable<HasFillial> HasFillials { get { return _context.HasFillials; } }
 
         public IEnumerable<PaymentMethod> PaymentMethods { get { return _context.PaymentMethods; } }
 
