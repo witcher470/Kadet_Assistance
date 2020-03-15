@@ -11,11 +11,6 @@ namespace DataTier.Entities.Concrete.Enums
         public string Name { get; set; }
         [JsonIgnore]
         public ServiceStatus ServiceStatus { get; set; }
-        [JsonIgnore]
-        public ICollection<Order> Orders { get; set; }
-        public Service()
-        {
-            Orders = new List<Order>();
-        }
+
     }
 }

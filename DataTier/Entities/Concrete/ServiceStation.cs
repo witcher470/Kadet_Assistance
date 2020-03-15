@@ -15,11 +15,6 @@ namespace DataTier.Entities.Concrete
         public string Street { get; set; }
         public string HomeNumber { get; set; }
         public ServiceStationStatus ServiceStationStatus { get; set; }
-        [JsonIgnore]
-        public ICollection<DealerCenter> DealerCenters { get; set; }
-        public ServiceStation()
-        {
-            DealerCenters = new List<DealerCenter>();
-        }
+
     }
 }

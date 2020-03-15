@@ -9,11 +9,6 @@ namespace DataTier.Entities.Concrete.Enums
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        [JsonIgnore]
-        public ICollection<DealerCenter> DealerCenters { get; set; }
-        public SettlementPeriod()
-        {
-            DealerCenters = new List<DealerCenter>();
-        }
+
     }
 }

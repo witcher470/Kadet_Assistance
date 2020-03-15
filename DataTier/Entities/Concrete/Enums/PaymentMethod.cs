@@ -11,12 +11,5 @@ namespace DataTier.Entities.Concrete
         public string Name { get; set; }
         [JsonIgnore]
         public ICollection<Order> Orders { get; set; }
-        [JsonIgnore]
-        public ICollection<Contractor> Contractors { get; set; }
-        public PaymentMethod()
-        {
-            Orders = new List<Order>();
-            Contractors = new List<Contractor>();
-        }
     }
 }

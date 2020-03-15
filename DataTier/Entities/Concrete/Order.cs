@@ -34,12 +34,6 @@ namespace DataTier.Entities.Concrete
         public int ServiceRating { get; set; }
         public string OperatorComment { get; set; }
         public string ClientReview { get; set; }
-        [JsonIgnore]
-        public ICollection<Contractor> Contractors { get; set; }
-        public Order()
-        {
-            Contractors = new List<Contractor>();
-        }
 
     }
 }

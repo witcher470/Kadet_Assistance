@@ -16,11 +16,6 @@ namespace DataTier.Entities.Concrete
         public int CarBrandId { get; set; }
         public CarBrand CarBrand { get; set; }
         public FillialStatus FillialStatus { get; set; }
-        [JsonIgnore]
-        public ICollection<DealerCenter> DealerCenters { get; set; }
-        public Fillial()
-        {
-            DealerCenters = new List<DealerCenter>();
-        }
+
     }
 }

@@ -11,12 +11,6 @@ namespace DataTier.Entities.Concrete
         public string Name { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
-        [JsonIgnore]
-        public ICollection<DealerCenter> DealerCenters { get; set; }
-        public AccountingResponsiblePerson()
-        {
-            DealerCenters = new List<DealerCenter>();
-        }
 
     }
 }
