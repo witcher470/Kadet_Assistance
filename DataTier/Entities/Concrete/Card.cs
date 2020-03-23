@@ -56,9 +56,6 @@ namespace DataTier.Entities.Concrete
         public string EmployerSecondName { get; set; }
         [Required(ErrorMessage = "Введите отчество сотрудника ")]
         public string EmployerThirdName { get; set; }
-        public Card()
-        {
-        }
       
     }
 }
