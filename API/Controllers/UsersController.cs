@@ -90,7 +90,7 @@ namespace API.Controllers
             if (!String.IsNullOrEmpty(searchString))
             {
 
-                users = users.Include<Country>.Where(s => s.Country.CountryName == searchString);
+                users = users.Where(s => s.Country.Name == searchString);
             }
 
             return Ok(users);
