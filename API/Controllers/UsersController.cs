@@ -10,7 +10,7 @@ using DataTier.Entities.Concrete;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class UsersController : ControllerBase
     {
@@ -25,9 +25,101 @@ namespace API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
+
             return await _context.Users.ToListAsync();
         }
+        // GET: api/UsersSortedByStatus
+        [HttpGet]
+        public IActionResult GetUsersSortedByStatus()
+        {
+            var users = _context.Users.OrderBy(us => us.UserStatus);
+            return Ok(users);
+        }
+        // GET: api/UsersSortedByRole
+        [HttpGet]
+        public IActionResult GetUsersSortedByRole()
+        {
+            var users = _context.Users.OrderBy(us => us.Role);
+            return Ok(users);
+        }
+        [HttpGet]
+        public IActionResult SearchByFirstName(string searchString)
+        {
+            var users = from us in _context.Users
+                        select us;
 
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                users = users.Where(s => s.FirstName.Contains(searchString));
+            }
+
+            return Ok(users);
+        }
+        [HttpGet]
+        public IActionResult SearchBySecondName(string searchString)
+        {
+            var users = from us in _context.Users
+                        select us;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                users = users.Where(s => s.SecondName.Contains(searchString));
+            }
+
+            return Ok(users);
+        }
+        [HttpGet]
+        public IActionResult SearchByThirdName(string searchString)
+        {
+            var users = from us in _context.Users
+                        select us;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                users = users.Where(s => s.ThirdName.Contains(searchString));
+            }
+
+            return Ok(users);
+        }
+        [HttpGet]
+        public IActionResult SearchByCountry(string searchString)
+        {
+            var users = from us in _context.Users
+                        select us;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                users = users.Where(s => s.Country.Contains(searchString));
+            }
+
+            return Ok(users);
+        }
+        [HttpGet]
+        public IActionResult SearchByMainLanguage(string searchString)
+        {
+            var users = from us in _context.Users
+                        select us;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                users = users.Where(s => s.MainLanguage.Contains(searchString));
+            }
+
+            return Ok(users);
+        }
+        [HttpGet]
+        public IActionResult SearchByAnotherLanguage(string searchString)
+        {
+            var users = from us in _context.Users
+                        select us;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                users = users.Where(s => s.AnotherLanguage.Contains(searchString));
+            }
+
+            return Ok(users);
+        }
         // GET: api/Users/5
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUser(int id)
