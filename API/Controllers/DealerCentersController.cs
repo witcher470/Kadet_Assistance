@@ -10,7 +10,7 @@ using DataTier.Entities.Concrete;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class DealerCentersController : ControllerBase
     {
@@ -26,6 +26,20 @@ namespace API.Controllers
         public async Task<ActionResult<IEnumerable<DealerCenter>>> GetDealerCenters()
         {
             return await _context.DealerCenters.ToListAsync();
+        }
+        [HttpGet]
+        public IActionResult SearchByName(string searchString)
+        {
+            var dealercenters = from dc in _context.DealerCenters
+                        select dc;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+
+                dealercenters = dealercenters.Where(s => s.Name == searchString);
+            }
+
+            return Ok(dealercenters);
         }
 
         // GET: api/DealerCenters/5

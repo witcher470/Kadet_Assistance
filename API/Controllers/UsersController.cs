@@ -89,7 +89,8 @@ namespace API.Controllers
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                users = users.Where(s => s.Country.Contains(searchString));
+
+                users = users.Include<Country>.Where(s => s.Country.CountryName == searchString);
             }
 
             return Ok(users);
