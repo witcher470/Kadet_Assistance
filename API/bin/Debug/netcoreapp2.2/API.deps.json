@@ -92,6 +92,21 @@
           "lib/netstandard1.3/Microsoft.CodeAnalysis.Workspaces.dll": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Relational.Design/1.1.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "2.2.0",
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.21115"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
       "Microsoft.NETCore.UniversalWindowsPlatform/6.2.9": {},
       "Microsoft.OpenApi/1.1.4": {
@@ -268,6 +283,26 @@
         },
         "compile": {
           "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL.Design/1.1.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.2.0",
+          "Microsoft.EntityFrameworkCore.Relational": "2.2.0",
+          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.0",
+          "Microsoft.Extensions.DependencyInjection": "2.2.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
+          "Npgsql": "4.0.4",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll": {}
         }
       },
       "NuGet.Frameworks/4.7.0": {
@@ -590,7 +625,9 @@
           "Microsoft.EntityFrameworkCore": "2.2.0",
           "Newtonsoft.Json": "12.0.3",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "2.2.0",
-          "xunit": "2.2.0"
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0",
+          "xunit": "2.2.0",
+          "xunit.extensibility.core": "2.2.0"
         },
         "runtime": {
           "DataTier.dll": {}
@@ -3796,6 +3833,13 @@
       "path": "microsoft.codeanalysis.workspaces.common/2.8.0",
       "hashPath": "microsoft.codeanalysis.workspaces.common.2.8.0.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore.Relational.Design/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fF0sVEUkoGeJutGIzwnYsJJ9o2hxEGJRpSaCxPq63rhSwn0hBmCwf9ET4QqYqO9Pc6+ODXenAQa095CWzuM4Kg==",
+      "path": "microsoft.entityframeworkcore.relational.design/1.1.0",
+      "hashPath": "microsoft.entityframeworkcore.relational.design.1.1.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3900,6 +3944,13 @@
       "sha512": "sha512-gUHdEtuJ8JR//bLMBzsu6WZOO858Jfli1BEoMcEv3ehgcU4ibdwEXUNt2b0Xs0MJmZ031wTDGasmdFEXH2KAjw==",
       "path": "npgsql.entityframeworkcore.postgresql/2.2.0",
       "hashPath": "npgsql.entityframeworkcore.postgresql.2.2.0.nupkg.sha512"
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL.Design/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+taA6t8sRI0JTbyCZH0GobEtJYvU4aAGBf5/2/CutWHiYpO2nLfJ8SQSyWYMKakrwn1/NDM9VV85mGEAzBZ7LQ==",
+      "path": "npgsql.entityframeworkcore.postgresql.design/1.1.0",
+      "hashPath": "npgsql.entityframeworkcore.postgresql.design.1.1.0.nupkg.sha512"
     },
     "NuGet.Frameworks/4.7.0": {
       "type": "package",

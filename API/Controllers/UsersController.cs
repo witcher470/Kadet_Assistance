@@ -123,7 +123,7 @@ namespace API.Controllers
             return Ok(users);
         }
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetDispatchers()
+        public ActionResult<IEnumerable<User>> GetDispatchers()
         {
             IQueryable<User> users = _context.Users;
             if (users != null)
@@ -134,7 +134,7 @@ namespace API.Controllers
         }
         // GET: api/Users/5
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetSupervisors()
+        public ActionResult<IEnumerable<User>> GetSupervisors()
         {
             IQueryable<User> users = _context.Users;
             if (users != null)
@@ -181,7 +181,7 @@ namespace API.Controllers
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetUser", new { id = user.Id }, user);
+            return Ok();
         }
 
         // DELETE: api/Users/5

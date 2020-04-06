@@ -10,8 +10,11 @@ E:\Projects C#\Kadet_Assistance\DataTier\bin\Debug\netcoreapp2.2\DataTier.deps.j
 E:\Projects C#\Kadet_Assistance\DataTier\bin\Debug\netcoreapp2.2\DataTier.dll
 E:\Projects C#\Kadet_Assistance\DataTier\bin\Debug\netcoreapp2.2\DataTier.pdb
 E:\Projects C#\Kadet_Assistance\DataTier\obj\Debug\netcoreapp2.2\DataTier.csprojAssemblyReference.cache
-E:\Projects C#\Kadet_Assistance\DataTier\obj\Debug\netcoreapp2.2\DataTier.csproj.CoreCompileInputs.cache
 E:\Projects C#\Kadet_Assistance\DataTier\obj\Debug\netcoreapp2.2\DataTier.AssemblyInfoInputs.cache
 E:\Projects C#\Kadet_Assistance\DataTier\obj\Debug\netcoreapp2.2\DataTier.AssemblyInfo.cs
 E:\Projects C#\Kadet_Assistance\DataTier\obj\Debug\netcoreapp2.2\DataTier.dll
 E:\Projects C#\Kadet_Assistance\DataTier\obj\Debug\netcoreapp2.2\DataTier.pdb
+E:\Projects C#\Kadet_Assistance\DataTier\bin\Debug\netcoreapp2.2\DataTier.runtimeconfig.json
+E:\Projects C#\Kadet_Assistance\DataTier\bin\Debug\netcoreapp2.2\DataTier.runtimeconfig.dev.json
+E:\Projects C#\Kadet_Assistance\DataTier\obj\Debug\netcoreapp2.2\DataTier.csproj.CoreCompileInputs.cache
+E:\Projects C#\Kadet_Assistance\DataTier\obj\Debug\netcoreapp2.2\DataTier.genruntimeconfig.cache

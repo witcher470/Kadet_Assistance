@@ -35,7 +35,7 @@ namespace DataTier.Entities.Abstract
           }*/
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=drona.db.elephantsql.com;Port=5432;Database=xehtcrnq; Username=xehtcrnq;Password=AN2qBR0sHGtHME4xw7wfAJ2OYjplO63q;");
+            optionsBuilder.UseNpgsql("Host=drona.db.elephantsql.com;Port=5432;Database=xehtcrnq;Username=xehtcrnq;Password=AN2qBR0sHGtHME4xw7wfAJ2OYjplO63q;");
         }
 
     }
