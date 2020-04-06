@@ -122,18 +122,26 @@ namespace API.Controllers
 
             return Ok(users);
         }
-        // GET: api/Users/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<User>> GetUser(int id)
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<User>>> GetDispatchers()
         {
-            var user = await _context.Users.FindAsync(id);
-
-            if (user == null)
+            IQueryable<User> users = _context.Users;
+            if (users != null)
             {
-                return NotFound();
+                users = users.Where(os => os.RoleId == 2);
             }
-
-            return user;
+            return users.ToList();
+        }
+        // GET: api/Users/5
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<User>>> GetSupervisors()
+        {
+            IQueryable<User> users = _context.Users;
+            if (users != null)
+            {
+                users = users.Where(os => os.RoleId == 1);
+            }
+            return users.ToList();
         }
 
         // PUT: api/Users/5
