@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ведьмак\\Desktop\\KadetAssistance\\Kadet_Assistance\\API\\API.csproj": {}
+    "E:\\Projects C#\\Kadet_Assistance\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ведьмак\\Desktop\\KadetAssistance\\Kadet_Assistance\\API\\API.csproj": {
+    "E:\\Projects C#\\Kadet_Assistance\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ведьмак\\Desktop\\KadetAssistance\\Kadet_Assistance\\API\\API.csproj",
+        "projectUniqueName": "E:\\Projects C#\\Kadet_Assistance\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Ведьмак\\Desktop\\KadetAssistance\\Kadet_Assistance\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\Ведьмак\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ведьмак\\Desktop\\KadetAssistance\\Kadet_Assistance\\API\\obj\\",
+        "projectPath": "E:\\Projects C#\\Kadet_Assistance\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\Кирилл\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects C#\\Kadet_Assistance\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ведьмак\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Кирилл\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Users\\Ведьмак\\Desktop\\KadetAssistance\\Kadet_Assistance\\DataTier\\DataTier.csproj": {
-                "projectPath": "C:\\Users\\Ведьмак\\Desktop\\KadetAssistance\\Kadet_Assistance\\DataTier\\DataTier.csproj"
+              "E:\\Projects C#\\Kadet_Assistance\\DataTier\\DataTier.csproj": {
+                "projectPath": "E:\\Projects C#\\Kadet_Assistance\\DataTier\\DataTier.csproj"
               }
             }
           }
@@ -115,24 +115,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ведьмак\\Desktop\\KadetAssistance\\Kadet_Assistance\\DataTier\\DataTier.csproj": {
+    "E:\\Projects C#\\Kadet_Assistance\\DataTier\\DataTier.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ведьмак\\Desktop\\KadetAssistance\\Kadet_Assistance\\DataTier\\DataTier.csproj",
+        "projectUniqueName": "E:\\Projects C#\\Kadet_Assistance\\DataTier\\DataTier.csproj",
         "projectName": "DataTier",
-        "projectPath": "C:\\Users\\Ведьмак\\Desktop\\KadetAssistance\\Kadet_Assistance\\DataTier\\DataTier.csproj",
-        "packagesPath": "C:\\Users\\Ведьмак\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ведьмак\\Desktop\\KadetAssistance\\Kadet_Assistance\\DataTier\\obj\\",
+        "projectPath": "E:\\Projects C#\\Kadet_Assistance\\DataTier\\DataTier.csproj",
+        "packagesPath": "C:\\Users\\Кирилл\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects C#\\Kadet_Assistance\\DataTier\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ведьмак\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Кирилл\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -189,7 +189,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

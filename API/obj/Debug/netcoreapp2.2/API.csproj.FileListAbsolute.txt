@@ -17,3 +17,24 @@ C:\Users\Ведьмак\Desktop\KadetAssistance\Kadet_Assistance\API\obj\Debug\n
 C:\Users\Ведьмак\Desktop\KadetAssistance\Kadet_Assistance\API\obj\Debug\netcoreapp2.2\API.csproj.CopyComplete
 C:\Users\Ведьмак\Desktop\KadetAssistance\Kadet_Assistance\API\obj\Debug\netcoreapp2.2\API.dll
 C:\Users\Ведьмак\Desktop\KadetAssistance\Kadet_Assistance\API\obj\Debug\netcoreapp2.2\API.pdb
+E:\Projects C#\Kadet_Assistance\API\bin\Debug\netcoreapp2.2\appsettings.Development.json
+E:\Projects C#\Kadet_Assistance\API\bin\Debug\netcoreapp2.2\appsettings.json
+E:\Projects C#\Kadet_Assistance\API\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+E:\Projects C#\Kadet_Assistance\API\bin\Debug\netcoreapp2.2\API.deps.json
+E:\Projects C#\Kadet_Assistance\API\bin\Debug\netcoreapp2.2\API.runtimeconfig.json
+E:\Projects C#\Kadet_Assistance\API\bin\Debug\netcoreapp2.2\API.runtimeconfig.dev.json
+E:\Projects C#\Kadet_Assistance\API\bin\Debug\netcoreapp2.2\API.dll
+E:\Projects C#\Kadet_Assistance\API\bin\Debug\netcoreapp2.2\API.pdb
+E:\Projects C#\Kadet_Assistance\API\bin\Debug\netcoreapp2.2\DataTier.dll
+E:\Projects C#\Kadet_Assistance\API\bin\Debug\netcoreapp2.2\DataTier.pdb
+E:\Projects C#\Kadet_Assistance\API\obj\Debug\netcoreapp2.2\API.csprojAssemblyReference.cache
+E:\Projects C#\Kadet_Assistance\API\obj\Debug\netcoreapp2.2\API.csproj.CoreCompileInputs.cache
+E:\Projects C#\Kadet_Assistance\API\obj\Debug\netcoreapp2.2\API.RazorAssemblyInfo.cache
+E:\Projects C#\Kadet_Assistance\API\obj\Debug\netcoreapp2.2\API.RazorAssemblyInfo.cs
+E:\Projects C#\Kadet_Assistance\API\obj\Debug\netcoreapp2.2\API.AssemblyInfoInputs.cache
+E:\Projects C#\Kadet_Assistance\API\obj\Debug\netcoreapp2.2\API.AssemblyInfo.cs
+E:\Projects C#\Kadet_Assistance\API\obj\Debug\netcoreapp2.2\API.RazorTargetAssemblyInfo.cache
+E:\Projects C#\Kadet_Assistance\API\obj\Debug\netcoreapp2.2\API.csproj.CopyComplete
+E:\Projects C#\Kadet_Assistance\API\obj\Debug\netcoreapp2.2\API.dll
+E:\Projects C#\Kadet_Assistance\API\obj\Debug\netcoreapp2.2\API.pdb
+E:\Projects C#\Kadet_Assistance\API\obj\Debug\netcoreapp2.2\API.genruntimeconfig.cache
