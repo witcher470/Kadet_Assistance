@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
@@ -16,12 +17,14 @@ namespace DataTier.Entities.Concrete
         public string SecondName { get; set; }
         [Required(ErrorMessage = "Введите отчество")]
         public string ThirdName { get; set; }
+        [Required(ErrorMessage = "Укажите страну")]
         public int RoleId { get; set; }
         [Required(ErrorMessage = "Выберите роль")]
+        [JsonIgnore]
         public Role Role { get; set; }
         public DateTime StartWorkDate { get; set; }
-        public int CountryId { get; set; }
-        [Required(ErrorMessage = "Укажите страну")]
+        public int CountryId { get; set; }        
+        [JsonIgnore]
         public Country Country { get; set; }
         [Required(ErrorMessage = "Укажите основной язык")]
         public string MainLanguage { get; set; }
@@ -38,9 +41,5 @@ namespace DataTier.Entities.Concrete
         [Required(ErrorMessage = "Введите SIP номер")]
         public string PhoneSIPNumber { get; set; }
         public ICollection<Country> Countries { get; set; }
-        public User()
-        {
-            Countries = new List<Country>();
-        }
     }
 }

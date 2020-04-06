@@ -84,13 +84,14 @@ namespace API.Controllers
         [HttpGet]
         public IActionResult SearchByCountry(string searchString)
         {
-            var users = from us in _context.Users
+            IQueryable<User> users = from us in _context.Users
                         select us;
+            IQueryable<Country> countries =from s in _context.Countries
+                                           select s;
 
             if (!String.IsNullOrEmpty(searchString))
             {
-
-                users = users.Where(s => s.Country.Name == searchString);
+                users = users.Where(us => us.CountryId == us.Country.Id).Where(us => us.Country.Name.Contains(searchString));
             }
 
             return Ok(users);
