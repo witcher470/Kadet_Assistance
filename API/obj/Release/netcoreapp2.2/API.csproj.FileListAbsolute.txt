@@ -17,3 +17,45 @@ C:\Users\Ведьмак\Desktop\KadetAssistance\Kadet_Assistance\API\obj\Release
 C:\Users\Ведьмак\Desktop\KadetAssistance\Kadet_Assistance\API\bin\Release\netcoreapp2.2\DataTier.dll
 C:\Users\Ведьмак\Desktop\KadetAssistance\Kadet_Assistance\API\bin\Release\netcoreapp2.2\DataTier.pdb
 C:\Users\Ведьмак\Desktop\KadetAssistance\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.csproj.CopyComplete
+E:\Projects C#\Kadet_Assistance\API\bin\Release\netcoreapp2.2\appsettings.Development.json
+E:\Projects C#\Kadet_Assistance\API\bin\Release\netcoreapp2.2\appsettings.json
+E:\Projects C#\Kadet_Assistance\API\bin\Release\netcoreapp2.2\Properties\launchSettings.json
+E:\Projects C#\Kadet_Assistance\API\bin\Release\netcoreapp2.2\API.deps.json
+E:\Projects C#\Kadet_Assistance\API\bin\Release\netcoreapp2.2\API.runtimeconfig.json
+E:\Projects C#\Kadet_Assistance\API\bin\Release\netcoreapp2.2\API.runtimeconfig.dev.json
+E:\Projects C#\Kadet_Assistance\API\bin\Release\netcoreapp2.2\API.dll
+E:\Projects C#\Kadet_Assistance\API\bin\Release\netcoreapp2.2\API.pdb
+E:\Projects C#\Kadet_Assistance\API\bin\Release\netcoreapp2.2\DataTier.dll
+E:\Projects C#\Kadet_Assistance\API\bin\Release\netcoreapp2.2\DataTier.pdb
+E:\Projects C#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.csprojAssemblyReference.cache
+E:\Projects C#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.csproj.CoreCompileInputs.cache
+E:\Projects C#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.RazorAssemblyInfo.cache
+E:\Projects C#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.RazorAssemblyInfo.cs
+E:\Projects C#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.AssemblyInfoInputs.cache
+E:\Projects C#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.AssemblyInfo.cs
+E:\Projects C#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.RazorTargetAssemblyInfo.cache
+E:\Projects C#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.csproj.CopyComplete
+E:\Projects C#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.dll
+E:\Projects C#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.pdb
+E:\Projects C#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.genruntimeconfig.cache
+E:\ProjectsC#\Kadet_Assistance\API\bin\Release\netcoreapp2.2\appsettings.Development.json
+E:\ProjectsC#\Kadet_Assistance\API\bin\Release\netcoreapp2.2\appsettings.json
+E:\ProjectsC#\Kadet_Assistance\API\bin\Release\netcoreapp2.2\Properties\launchSettings.json
+E:\ProjectsC#\Kadet_Assistance\API\bin\Release\netcoreapp2.2\API.deps.json
+E:\ProjectsC#\Kadet_Assistance\API\bin\Release\netcoreapp2.2\API.runtimeconfig.json
+E:\ProjectsC#\Kadet_Assistance\API\bin\Release\netcoreapp2.2\API.runtimeconfig.dev.json
+E:\ProjectsC#\Kadet_Assistance\API\bin\Release\netcoreapp2.2\API.dll
+E:\ProjectsC#\Kadet_Assistance\API\bin\Release\netcoreapp2.2\API.pdb
+E:\ProjectsC#\Kadet_Assistance\API\bin\Release\netcoreapp2.2\DataTier.dll
+E:\ProjectsC#\Kadet_Assistance\API\bin\Release\netcoreapp2.2\DataTier.pdb
+E:\ProjectsC#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.csprojAssemblyReference.cache
+E:\ProjectsC#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.csproj.CoreCompileInputs.cache
+E:\ProjectsC#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.RazorAssemblyInfo.cache
+E:\ProjectsC#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.RazorAssemblyInfo.cs
+E:\ProjectsC#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.AssemblyInfoInputs.cache
+E:\ProjectsC#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.AssemblyInfo.cs
+E:\ProjectsC#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.RazorTargetAssemblyInfo.cache
+E:\ProjectsC#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.csproj.CopyComplete
+E:\ProjectsC#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.dll
+E:\ProjectsC#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.pdb
+E:\ProjectsC#\Kadet_Assistance\API\obj\Release\netcoreapp2.2\API.genruntimeconfig.cache

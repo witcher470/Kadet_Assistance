@@ -13960,11 +13960,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects C#\\Kadet_Assistance\\API\\API.csproj",
+      "projectUniqueName": "E:\\ProjectsC#\\Kadet_Assistance\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "E:\\Projects C#\\Kadet_Assistance\\API\\API.csproj",
+      "projectPath": "E:\\ProjectsC#\\Kadet_Assistance\\API\\API.csproj",
       "packagesPath": "C:\\Users\\Кирилл\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects C#\\Kadet_Assistance\\API\\obj\\",
+      "outputPath": "E:\\ProjectsC#\\Kadet_Assistance\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13983,8 +13983,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "E:\\Projects C#\\Kadet_Assistance\\DataTier\\DataTier.csproj": {
-              "projectPath": "E:\\Projects C#\\Kadet_Assistance\\DataTier\\DataTier.csproj"
+            "E:\\ProjectsC#\\Kadet_Assistance\\DataTier\\DataTier.csproj": {
+              "projectPath": "E:\\ProjectsC#\\Kadet_Assistance\\DataTier\\DataTier.csproj"
             }
           }
         }

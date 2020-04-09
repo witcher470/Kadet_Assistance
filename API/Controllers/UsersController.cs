@@ -143,6 +143,18 @@ namespace API.Controllers
             }
             return users.ToList();
         }
+        [HttpGet]
+        public IActionResult GetActiveDispatchers()
+        {
+            var users = _context.Users.Where(us=>us.UserStatus == UserStatus.active);
+            return Ok(users);
+        }
+        [HttpGet]
+        public IActionResult GetInactiveDispatchers()
+        {
+            var users = _context.Users.Where(us => us.UserStatus == UserStatus.inactive);
+            return Ok(users);
+        }
 
         // PUT: api/Users/5
         [HttpPut("{id}")]

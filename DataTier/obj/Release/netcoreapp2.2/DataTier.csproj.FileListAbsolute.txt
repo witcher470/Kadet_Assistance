@@ -6,3 +6,27 @@ C:\Users\Ведьмак\Desktop\KadetAssistance\Kadet_Assistance\DataTier\obj\Re
 C:\Users\Ведьмак\Desktop\KadetAssistance\Kadet_Assistance\DataTier\obj\Release\netcoreapp2.2\DataTier.AssemblyInfo.cs
 C:\Users\Ведьмак\Desktop\KadetAssistance\Kadet_Assistance\DataTier\obj\Release\netcoreapp2.2\DataTier.dll
 C:\Users\Ведьмак\Desktop\KadetAssistance\Kadet_Assistance\DataTier\obj\Release\netcoreapp2.2\DataTier.pdb
+E:\Projects C#\Kadet_Assistance\DataTier\bin\Release\netcoreapp2.2\DataTier.deps.json
+E:\Projects C#\Kadet_Assistance\DataTier\bin\Release\netcoreapp2.2\DataTier.runtimeconfig.json
+E:\Projects C#\Kadet_Assistance\DataTier\bin\Release\netcoreapp2.2\DataTier.runtimeconfig.dev.json
+E:\Projects C#\Kadet_Assistance\DataTier\bin\Release\netcoreapp2.2\DataTier.dll
+E:\Projects C#\Kadet_Assistance\DataTier\bin\Release\netcoreapp2.2\DataTier.pdb
+E:\Projects C#\Kadet_Assistance\DataTier\obj\Release\netcoreapp2.2\DataTier.csprojAssemblyReference.cache
+E:\Projects C#\Kadet_Assistance\DataTier\obj\Release\netcoreapp2.2\DataTier.csproj.CoreCompileInputs.cache
+E:\Projects C#\Kadet_Assistance\DataTier\obj\Release\netcoreapp2.2\DataTier.AssemblyInfoInputs.cache
+E:\Projects C#\Kadet_Assistance\DataTier\obj\Release\netcoreapp2.2\DataTier.AssemblyInfo.cs
+E:\Projects C#\Kadet_Assistance\DataTier\obj\Release\netcoreapp2.2\DataTier.dll
+E:\Projects C#\Kadet_Assistance\DataTier\obj\Release\netcoreapp2.2\DataTier.pdb
+E:\Projects C#\Kadet_Assistance\DataTier\obj\Release\netcoreapp2.2\DataTier.genruntimeconfig.cache
+E:\ProjectsC#\Kadet_Assistance\DataTier\bin\Release\netcoreapp2.2\DataTier.deps.json
+E:\ProjectsC#\Kadet_Assistance\DataTier\bin\Release\netcoreapp2.2\DataTier.runtimeconfig.json
+E:\ProjectsC#\Kadet_Assistance\DataTier\bin\Release\netcoreapp2.2\DataTier.runtimeconfig.dev.json
+E:\ProjectsC#\Kadet_Assistance\DataTier\bin\Release\netcoreapp2.2\DataTier.dll
+E:\ProjectsC#\Kadet_Assistance\DataTier\bin\Release\netcoreapp2.2\DataTier.pdb
+E:\ProjectsC#\Kadet_Assistance\DataTier\obj\Release\netcoreapp2.2\DataTier.csprojAssemblyReference.cache
+E:\ProjectsC#\Kadet_Assistance\DataTier\obj\Release\netcoreapp2.2\DataTier.csproj.CoreCompileInputs.cache
+E:\ProjectsC#\Kadet_Assistance\DataTier\obj\Release\netcoreapp2.2\DataTier.AssemblyInfoInputs.cache
+E:\ProjectsC#\Kadet_Assistance\DataTier\obj\Release\netcoreapp2.2\DataTier.AssemblyInfo.cs
+E:\ProjectsC#\Kadet_Assistance\DataTier\obj\Release\netcoreapp2.2\DataTier.dll
+E:\ProjectsC#\Kadet_Assistance\DataTier\obj\Release\netcoreapp2.2\DataTier.pdb
+E:\ProjectsC#\Kadet_Assistance\DataTier\obj\Release\netcoreapp2.2\DataTier.genruntimeconfig.cache

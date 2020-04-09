@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w7gpI2ysV1G57R/GotQLh9ph6K+F0wFIH+yyNW66w4oZMu5NSeJj2Eem8ztMkivNo9EJo52r9pj1Xb29KazYjA==",
+  "dgSpecHash": "5TzB7OhhfqnR2iFQgmRIp3S4T2s5wUEq66X3ExALzyc3v/pZGoMzahbHXi8wQqTs6Jyr97zlX+H8gg25aM977w==",
   "success": true,
-  "projectFilePath": "E:\\Projects C#\\Kadet_Assistance\\DataTier\\DataTier.csproj",
+  "projectFilePath": "E:\\ProjectsC#\\Kadet_Assistance\\DataTier\\DataTier.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.entityframeworkcore\\2.2.0\\microsoft.entityframeworkcore.2.2.0.nupkg.sha512",
