@@ -188,9 +188,28 @@ namespace API.Controllers
 
         // POST: api/Users
         [HttpPost]
-        public async Task<ActionResult<User>> PostUser(User user)
+        public async Task<ActionResult> PostUser(PostUsersModel model)
         {
-            _context.Users.Add(user);
+            var user = new User()
+            {
+                FirstName = model.FirstName,
+                SecondName = model.SecondName,
+                ThirdName = model.ThirdName,
+                RoleId = model.RoleId,
+                StartWorkDate = model.StartWorkDate,
+                CountryId = model.CountryId,
+                MainLanguage = model.MainLanguage,
+                AnotherLanguage = model.AnotherLanguage,
+                Login = model.Login,
+                Password = model.Password,
+                PhoneNumber = model.PhoneNumber,
+                Email = model.Email,
+                Timezone = model.Timezone,
+                PhoneSIPNumber = model.PhoneSIPNumber,
+
+
+            };
+                _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
             return Ok();
