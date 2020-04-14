@@ -7,7 +7,11 @@ namespace DataTier.Entities.Concrete
     public enum UserStatus
     {
         active,
-        inactive
+        outlet,
+        onSickLeave,
+        onHoliday,
+        fired
+
 
     }
 }

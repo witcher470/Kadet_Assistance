@@ -28,6 +28,18 @@ namespace API.Controllers
 
             return await _context.Users.ToListAsync();
         }
+        [HttpGet("{id}")]
+        public async Task<ActionResult<User>> GetUsersById(int id)
+        {
+            var user = await _context.Users.FindAsync(id);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return user;
+        }
         // GET: api/UsersSortedByStatus
         [HttpGet]
         public IActionResult GetUsersSortedByStatus()
@@ -45,7 +57,7 @@ namespace API.Controllers
         [HttpGet]
         public IActionResult SearchByFirstName(string searchString)
         {
-            var users = from us in _context.Users
+            var users = from us in _context.Users.Where(ur => ur.RoleId == 2)
                         select us;
 
             if (!String.IsNullOrEmpty(searchString))
@@ -58,7 +70,7 @@ namespace API.Controllers
         [HttpGet]
         public IActionResult SearchBySecondName(string searchString)
         {
-            var users = from us in _context.Users
+            var users = from us in _context.Users.Where(ur => ur.RoleId == 2)
                         select us;
 
             if (!String.IsNullOrEmpty(searchString))
@@ -71,7 +83,7 @@ namespace API.Controllers
         [HttpGet]
         public IActionResult SearchByThirdName(string searchString)
         {
-            var users = from us in _context.Users
+            var users = from us in _context.Users.Where(ur => ur.RoleId == 2)
                         select us;
 
             if (!String.IsNullOrEmpty(searchString))
@@ -84,8 +96,8 @@ namespace API.Controllers
         [HttpGet]
         public IActionResult SearchByCountry(string searchString)
         {
-            IQueryable<User> users = from us in _context.Users
-                        select us;
+            IQueryable<User> users = from us in _context.Users.Where(ur => ur.RoleId == 2)
+                                     select us;
             IQueryable<Country> countries =from s in _context.Countries
                                            select s;
 
@@ -99,7 +111,7 @@ namespace API.Controllers
         [HttpGet]
         public IActionResult SearchByMainLanguage(string searchString)
         {
-            var users = from us in _context.Users
+            var users = from us in _context.Users.Where(ur => ur.RoleId == 2)
                         select us;
 
             if (!String.IsNullOrEmpty(searchString))
@@ -112,7 +124,7 @@ namespace API.Controllers
         [HttpGet]
         public IActionResult SearchByAnotherLanguage(string searchString)
         {
-            var users = from us in _context.Users
+            var users = from us in _context.Users.Where(ur => ur.RoleId == 2)
                         select us;
 
             if (!String.IsNullOrEmpty(searchString))
@@ -146,13 +158,31 @@ namespace API.Controllers
         [HttpGet]
         public IActionResult GetActiveDispatchers()
         {
-            var users = _context.Users.Where(us=>us.UserStatus == UserStatus.active);
+            var users = _context.Users.Where(ur => ur.RoleId == 2).Where(us=>us.UserStatus == UserStatus.active);
             return Ok(users);
         }
         [HttpGet]
-        public IActionResult GetInactiveDispatchers()
+        public IActionResult GetOutletDispatchers()
         {
-            var users = _context.Users.Where(us => us.UserStatus == UserStatus.inactive);
+            var users = _context.Users.Where(ur => ur.RoleId == 2).Where(us => us.UserStatus == UserStatus.outlet);
+            return Ok(users);
+        }
+        [HttpGet]
+        public IActionResult GetOnSickLeaveDispatchers()
+        {
+            var users = _context.Users.Where(ur => ur.RoleId == 2).Where(us => us.UserStatus == UserStatus.onSickLeave);
+            return Ok(users);
+        }
+        [HttpGet]
+        public IActionResult GetOnHolidayDispatchers()
+        {
+            var users = _context.Users.Where(ur => ur.RoleId == 2).Where(us => us.UserStatus == UserStatus.onHoliday);
+            return Ok(users);
+        }
+        [HttpGet]
+        public IActionResult GetFiredDispatchers()
+        {
+            var users = _context.Users.Where(ur => ur.RoleId == 2).Where(us => us.UserStatus == UserStatus.fired);
             return Ok(users);
         }
 
@@ -206,6 +236,7 @@ namespace API.Controllers
                 Email = model.Email,
                 Timezone = model.Timezone,
                 PhoneSIPNumber = model.PhoneSIPNumber,
+                NumberOfProcessedApplications = 0
 
 
             };
