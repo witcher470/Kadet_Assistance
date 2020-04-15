@@ -22,6 +22,7 @@ namespace API
 {
     public class Startup
     {
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -33,6 +34,7 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+           
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                    .AddJwtBearer(options =>
                    {
@@ -57,6 +59,7 @@ namespace API
                            ValidateIssuerSigningKey = true,
                        };*/
                    });
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1).AddJsonOptions(options =>
             {
                 options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Serialize;
@@ -78,7 +81,7 @@ namespace API
                 options.AddPolicy(MyAllowSpecificOrigins,
                 builder =>
                 {
-                    builder.WithOrigins("https://crmfoodteama.herokuapp.com/",
+                    builder.WithOrigins("https://kadet-assistance.herokuapp.com",
                                         "http://www.contoso.com")
                                         .AllowAnyHeader()
                                         .AllowAnyMethod();
