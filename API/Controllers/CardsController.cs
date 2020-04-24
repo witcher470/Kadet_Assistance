@@ -126,6 +126,18 @@ namespace API.Controllers
 
             return Ok(cards);
         }
+        [HttpGet]
+        public IActionResult GetActiveCards()
+        {
+            var cards = _context.Cards.Where(cs => cs.CardStatus == CardStatus.active);
+            return Ok(cards);
+        }
+        [HttpGet]
+        public IActionResult GetInactiveCards()
+        {
+            var cards = _context.Cards.Where(cs => cs.CardStatus == CardStatus.inactive);
+            return Ok(cards);
+        }
 
         // PUT: api/Cards/5
         [HttpPut("{id}")]
