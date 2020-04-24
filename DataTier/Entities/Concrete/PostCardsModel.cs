@@ -1,17 +1,16 @@
-﻿using DataTier.Entities.Concrete.Enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Text;
+using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
+using Xunit;
 using Xunit.Sdk;
+using DataTier.Entities.Concrete.Enums;
 
 namespace DataTier.Entities.Concrete
 {
-    public class Card
+    public class PostCardsModel
     {
-        public int Id { get; set; }
-        [Required(ErrorMessage = "Введите номер карты")]
-        [RegularExpression(@"/[^a-zA-Z0-9\-\_]{4,16}/$", ErrorMessage = "Некорректный номер телефона")]
         public string CardNumber { get; set; }
         [Required(ErrorMessage = "Введите стоимость карты")]
         public int CardCost { get; set; }
@@ -20,7 +19,7 @@ namespace DataTier.Entities.Concrete
         [Required(ErrorMessage = "Укажите срок действия карты ")]
         public DateTime Duration { get; set; }
         [Required(ErrorMessage = "Введите VIN ")]
-        public string VIN { get; set; }        
+        public string VIN { get; set; }
         public string Color { get; set; }
         [Required(ErrorMessage = "Укажите доступные службы")]
         public Service Services { get; set; }
@@ -56,6 +55,6 @@ namespace DataTier.Entities.Concrete
         public string EmployerSecondName { get; set; }
         [Required(ErrorMessage = "Введите отчество сотрудника ")]
         public string EmployerThirdName { get; set; }
-      
+
     }
 }

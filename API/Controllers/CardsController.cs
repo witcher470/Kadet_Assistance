@@ -10,7 +10,7 @@ using DataTier.Entities.Concrete;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class CardsController : ControllerBase
     {
@@ -40,6 +40,91 @@ namespace API.Controllers
             }
 
             return card;
+        }
+        [HttpGet]
+        public IActionResult SearchByFristName(string searchString)
+        {
+            var cards = from cd in _context.Cards
+                        select cd;
+            IQueryable<ClientInfo> clientinfos = from ci in _context.ClientInfos
+                                                 select ci;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                cards = cards.Where(ci => ci.ClientId == ci.ClientInfo.Id).Where(ci => ci.ClientInfo.ClientFristName.Contains(searchString));
+            }
+
+            return Ok(cards);
+        }
+        [HttpGet]
+        public IActionResult SearchBySecondName(string searchString)
+        {
+            var cards = from cd in _context.Cards
+                        select cd;
+            IQueryable<ClientInfo> clientinfos = from ci in _context.ClientInfos
+                                                 select ci;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                cards = cards.Where(ci => ci.ClientId == ci.ClientInfo.Id).Where(ci => ci.ClientInfo.ClientSecondName.Contains(searchString));
+            }
+
+            return Ok(cards);
+        }
+        [HttpGet]
+        public IActionResult SearchByThirdName(string searchString)
+        {
+            var cards = from cd in _context.Cards
+                        select cd;
+            IQueryable<ClientInfo> clientinfos = from ci in _context.ClientInfos
+                                                 select ci;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                cards = cards.Where(ci => ci.ClientId == ci.ClientInfo.Id).Where(ci => ci.ClientInfo.ClientThirdName.Contains(searchString));
+            }
+
+            return Ok(cards);
+        }
+        [HttpGet]
+        public IActionResult SearchByVIN(string searchString)
+        {
+            var cards = from cd in _context.Cards
+                        select cd;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                cards = cards.Where(cd => cd.VIN.Contains(searchString));
+            }
+
+            return Ok(cards);
+        }
+        [HttpGet]
+        public IActionResult SearchByCardNumber(string searchString)
+        {
+            var cards = from cd in _context.Cards
+                        select cd;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                cards = cards.Where(cd => cd.CardNumber.Contains(searchString));
+            }
+
+            return Ok(cards);
+        }
+        public IActionResult SearchByStateNumber(string searchString)
+        {
+            var cards = from cd in _context.Cards
+                        select cd;
+            IQueryable<ClientInfo> clientinfos = from ci in _context.ClientInfos
+                                            select ci;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                cards = cards.Where(ci => ci.ClientId == ci.ClientInfo.Id).Where(ci => ci.ClientInfo.StateNumber.Contains(searchString));
+            }
+
+            return Ok(cards);
         }
 
         // PUT: api/Cards/5
@@ -74,16 +159,44 @@ namespace API.Controllers
 
         // POST: api/Cards
         [HttpPost]
-        public async Task<ActionResult<Card>> PostCard(Card card)
+        public async Task<ActionResult> PostCard(PostCardsModel model)
         {
+            var card = new Card()
+            {
+                CardNumber = model.CardNumber,
+                CardCost = model.CardCost,
+                ClientId = model.ClientId,
+                ClientInfo = model.ClientInfo,
+                Duration = model.Duration,
+                VIN = model.VIN,
+                Color = model.Color,
+                Services = model.Services,
+                SellerFirstName = model.SellerFirstName,
+                SellerSecondName = model.SellerSecondName,
+                SellerThirdName = model.SellerThirdName,
+                NumberOfContractWithKadet = model.NumberOfContractWithKadet,
+                DateOfContractWithKadet = model.DateOfContractWithKadet,
+                NumberOfContractWithClient = model.NumberOfContractWithClient,
+                DateOfContractWithClient = model.DateOfContractWithClient,
+                ActionStartDate = model.ActionStartDate,
+                ManagerFirstName = model.ManagerFirstName,
+                ManagerSecondName = model.ManagerSecondName,
+                ManagerThirdName = model.ManagerThirdName,
+                CardStatus = model.CardStatus,
+                DeactivationDate = model.DeactivationDate,
+                CardAppeal = model.CardAppeal,
+                EmployerFirstName = model.EmployerFirstName,
+                EmployerSecondName = model.EmployerSecondName,
+                EmployerThirdName = model.EmployerThirdName
+            };
             _context.Cards.Add(card);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCard", new { id = card.Id }, card);
+            return Ok();
         }
 
-        // DELETE: api/Cards/5
-        [HttpDelete("{id}")]
+    // DELETE: api/Cards/5
+    [HttpDelete("{id}")]
         public async Task<ActionResult<Card>> DeleteCard(int id)
         {
             var card = await _context.Cards.FindAsync(id);

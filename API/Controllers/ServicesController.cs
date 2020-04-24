@@ -10,7 +10,7 @@ using DataTier.Entities.Concrete.Enums;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class ServicesController : ControllerBase
     {

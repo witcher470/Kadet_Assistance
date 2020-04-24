@@ -10,7 +10,7 @@ using DataTier.Entities.Concrete;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]/[action]")]
+    [Route("api/[controller]/[action]/[action]")]
     [ApiController]
     public class DealerCentersController : ControllerBase
     {
